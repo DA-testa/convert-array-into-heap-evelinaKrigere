@@ -44,9 +44,11 @@ def main():
         data = list(map(int, input().split()))
     elif "F" in ievade:
         file_n = input()
-        with open('test/'+file_n, 'r') as f:
-            n = int(f.readline())
-            data = list(map(int, f.readline()))
+        if "a" not in file_n:
+            with open('./tests/'+file_n, 'r') as f:
+
+                n = int(f.readline())
+                data = list(map(int, f.readline().split()))
 
 
     # input from keyboard
