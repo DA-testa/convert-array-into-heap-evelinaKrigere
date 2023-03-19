@@ -46,15 +46,14 @@ def main():
     elif "F" in ievade:
         file_n = input()
         if "a" not in file_n:
-            with open('./tests/'+file_n, 'r') as f:
-
+            with open('test/'+file_n,'r') as f:
                 n = int(f.readline())
                 data = list(map(int, f.readline().split()))
 
 
     # input from keyboard
-    n = int(input())
-    data = list(map(int, input().split()))
+    # n = int(input())
+    # data = list(map(int, input().split()))
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
